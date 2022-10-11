@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Hero(name, type, blood, attack) {
+            this.name = name,
+                this.type = type,
+                this.blood = blood,
+                this.attack = attack
+        }
+        var houyi = new Hero('后裔', 'sheshou', 100, '远程');
+        for (var k in houyi) {
+            // console.log(houyi[k]); //遍历值
+            console.log(k); //便利属性名
+        }
+    </script>
+</body>
+
+</html>

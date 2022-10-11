@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var date = new Date();
+        // console.log(date.getHours());
+        // console.log(date.getMinutes());
+        // console.log(date.getSeconds());
+        function time() {
+            var H = date.getHours();
+            H = H < 10 ? '0' + H : H;
+            var M = date.getMinutes();
+            var S = date.getSeconds();
+            S = S < 10 ? '0' + S : S;
+            return H + ':' + M + ':' + S;
+
+        }
+        console.log(time());
+        var date1 = +new Date(); //返回现在时间距离1970年的毫秒数
+        console.log(date1);
+        console.log(date.getTime());
+        console.log(date.valueOf());
+
+        console.log(Date.now()); //h5新增语法
+        //console.log(data.getDays);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
