@@ -19,7 +19,18 @@
                 a[b] = 1;
             }
         }
-        console.log(a)
+        console.log(a);
+        var max = 0;
+        var ch = '';
+        for (var k in a) {
+            if (a[k] > max) {
+                max = a[k];
+                ch = k;
+            }
+
+        }
+        console.log(max);
+        console.log(ch);
     </script>
 </head>
 
